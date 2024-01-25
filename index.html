@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=">
+	<title></title>
+
+	<style type="text/css">
+
+	body{
+		padding: 0;
+		margin: 0;
+		font-family: 'Arial', sans-serif;
+
+		box-sizing: border-box;
+	}
+
+		.loginbtn{
+         text-align: center;
+         width: 100%;
+         max-width: 150px;
+         padding: 15px;
+         padding-top:0px;
+         height: 30px;
+         color: white;
+         border: 1px solid white;
+         border-radius: 12px;
+         background-color: skyblue;
+         margin: 0 auto;
+         margin-top: 40px;
+         cursor: pointer;
+  }
+
+  .botoes{
+  	display: flex;
+  	width: 100%;
+  	max-width: 400px;
+  	margin: 0 auto;
+  	margin-bottom: 40px;
+  }
+
+
+
+  .container{
+  	
+  	width: 100%;
+  	height: 100%;
+  	max-width: 1980px;
+  	height: 650px;
+  	display: flex;
+  	background-color: red;
+  }
+
+  .containerdash{
+
+	text-align: center;
+  	width: 100%;
+	margin: 0 auto;
+	
+  	background-color: rgb(255, 255, 255);
+  	height: 100%;
+
+  }
+
+.menucima{
+	
+	width: 100%;
+	height: 110px;
+	display: flex;
+	background-color: #982b1c;
+}
+.contsingle{
+	
+
+	padding-left: 30px;	
+	margin: 0 auto;
+	padding: 20px;
+	width: 30%;
+	
+}
+.user{
+	padding-left: 50%;
+	position: relative;
+
+	display: flex;
+	width: 100%;
+	max-width: 200px;
+}
+.nome{
+	
+	width: 100px;
+	color: white;
+}
+.titulo{
+	color: white;
+	text-align: center;
+}
+.titulo p{
+	font-size: 20px;
+}
+.logo{
+	position: relative;
+	
+	left: 10px;
+	width: 100%;
+	border-radius: 10px;
+	height: 70px;
+}
+.logo img{
+	border-radius: 10px;
+	width: 100px;
+	height: 100%;
+}
+
+
+.foto{
+
+	width: 50px;
+	border-radius: 10px;
+	height: 40px;
+}
+.foto img{
+	position: relative;
+	top: 5px;
+	cursor: pointer;
+	border-radius: 100%;
+	width: 90%;
+	height: 100%;
+}
+
+.menulateral{
+	overflow-x: auto;
+	background-color: #982b1c;
+	width: 20%;
+  	height: 100%;
+	max-height: 650px;
+  	width: 300px;
+  	
+}
+
+.lsitaitems{
+
+	margin-top: 0px;
+	text-align: center;
+}
+.item{
+
+	cursor: pointer;
+		padding: 10px;
+		border-bottom: 1px solid white;
+	color: white;
+	transition: .3s;
+}
+
+.item:hover{
+	color: #982b1c;
+	background-color: #ffffff;
+}
+.bgL3{
+     
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+         justify-content: center;
+         align-items: center;
+}
+.bgconteudolog{
+
+width: 340px;
+height: 100%;
+max-height: 320px;
+margin: 50px auto;
+background-color: #fff;
+padding: 20px;
+overflow-x: hidden;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+.bgcontentt{
+   width: 100%;
+   height: 100%;
+     overflow: auto;
+}
+.bgcontentt h1{
+	font-size: 20px;
+  text-align: center;
+  color: #095a2d;
+  font-weight: 200;
+}
+
+.loginbtn{
+         text-align: center;
+         width: 100%;
+         max-width: 150px;
+         padding: 15px;
+         padding-top:0px;
+         height: 30px;
+         color: white;
+         border: 1px solid white;
+         border-radius: 12px;
+         background-color: #095a2d;
+         margin: 0 auto;
+         margin-top: 80px;
+         cursor: pointer;
+  }
+  
+  input {
+         padding: 10px;
+         margin-bottom: 10px;
+         border: 1px solid #ccc;
+         border-radius: 5px;
+         font-size: 14px;
+         box-sizing: border-box;
+         width: 100%;
+      }
+
+
+	  .painelmodelo{
+		width: 100%;
+	  }
+		.opcoes{
+			min-height: 50px;
+			width: 100%;
+            margin: 20px auto;
+            padding: 10px;
+            max-width: 1200px;
+            display: flex;
+            border-radius: 15px;
+            background-color: rgba(170, 173, 178, 0.426);
+		}
+		.categorias{
+			display: flex;
+			width: 50%;
+			padding: 5px;
+		}
+
+	  .categoriasingle{
+		width: 25%;
+		padding: 2px;
+	  }
+
+	  select{
+		border-radius: 5px;
+		padding: 2px;
+	  }
+
+	  /*
+	              margin: 0 auto;
+            width: 10%;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.426);
+            color: rgb(12, 36, 175);
+            text-align: center;
+            cursor: pointer;
+            transition: .2s;
+            border: none;*/
+
+		.botaoatualiza{
+			font-size: 15px;
+			text-align: center;
+			padding: 10px;
+			border-radius: 10px;
+			color: white;
+			background-color: rgb(15, 39, 61);
+		}
+
+
+
+
+
+
+
+.variaveis{
+	position: relative;
+	left: -100px;
+	display: flex;
+	width: 40%;
+}
+
+.singlevari{
+	width: 30%;
+	display: flex;
+	margin-left: 20px;
+}
+
+.input{
+
+}
+.input input{
+	padding: 10px;
+}
+.btnmais{
+	position: relative;
+	top: 10px;
+	width: 50px;
+	height: 20px;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	margin-left: 5px;
+	border-radius: 5px;
+	background-color: rgb(15, 39, 61);
+}
+
+.btnmenos{
+	position: relative;
+	top: 10px;
+	width: 50px;
+	height: 20px;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	margin-left: 5px;
+	border-radius: 5px;
+	background-color: rgb(15, 39, 61);
+}
+
+
+	</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="paglogin">
+
+	<div id="cadastroid" class="bgL3">
+  
+		<div class="bgconteudolog">
+	 
+			  <div class="bgcontentt">
+
+					<h1>Relizar login para acessar painel</h1>
+
+					<input type="text" id="nomeuser" placeholder="Nome: ">
+					<input type="text" id="senhauserc" placeholder="Senha: ">
+	 
+
+
+					
+			<div class="loginbtn" onclick="login()">
+				  <p>Login</p>
+			   </div>
+			
+			  </div>
+			
+	 
+			
+		</div>
+	 </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="pag1" style="display: none;">
+
+<div class="menucima">
+
+
+
+	<div class="contsingle">
+	<div class="logo">
+		<img src="ufpr.png"/>
+	</div>
+</div>
+
+
+
+
+<div class="contsingle">
+	<div class="titulo">
+		<p>Painel </p>
+	</div>
+</div>
+
+
+
+	<div class="contsingle">
+	<div class="user" style="position: relative;">
+
+		<div class="nome">
+			<p id="user"></p>
+		</div>
+	
+		<div class="foto">
+			<img src="user.webp"/>
+		</div>
+	
+	</div>
+</div>
+
+</div>
+
+<div class="container">
+
+<div class="menulateral">
+
+<div class="lsitaitems">
+
+
+
+		<div class="item" id="subcategoria1" onclick="teste(this.id)" style="border-top: 1px solid white">
+			
+			<p>Análise de previsões modelo</p>
+
+		</div>
+
+
+		<div class="item" id="subcategoria4" onclick="teste(this.id)" style="border-top: 1px solid white">
+			
+			<p>Treinar modelo</p>
+	
+		</div>
+
+
+		<div class="item" id="subcategoria2" onclick="teste(this.id)">
+			<p>Análise do dataset</p>
+		</div>
+
+
+		<div class="item" id="subcategoria3" onclick="teste(this.id)">
+			<p>Atualizar Dataset</p>
+
+		</div>
+
+
+
+
+<div class="item" id="subcategoria5" onclick="teste(this.id)" style="border-top: 1px solid white">
+			
+	<p>Configurações</p>
+
+</div>
+
+
+		<div class="item" onclick="sair()" style="border-bottom: none;">
+			<p>Sair</p>
+		</div>
+	</div>
+
+</div>
+
+
+
+
+	<div class="containerdash">
+
+		<div class="painelmodelo">
+
+			<div class="opcoes">
+
+				<div class="categorias">
+
+					<div class="categoriasingle">
+						<select>
+							<option value="opcao1">Cidade</option>
+							<option value="opcao2">Opcao 2</option>
+							<option value="opcao3">Opcao 3</option>
+						</select>
+					</div>
+
+
+					<div class="categoriasingle">
+						<select>
+							<option value="opcao1">Local de fabricacao</option>
+							<option value="opcao2">Opcao 2</option>
+							<option value="opcao3">Opcao 3</option>
+						</select>
+					</div>
+
+
+					<div class="categoriasingle">
+						<select>
+							<option value="opcao1">Tipo</option>
+							<option value="opcao2">Opcao 2</option>
+							<option value="opcao3">Opcao 3</option>
+						</select>
+					</div>
+
+
+				</div>
+
+				<div class="variaveis">
+
+					<div class="singlevari">
+
+						<div class="input">
+							<input type="text">
+						</div>
+
+						<div class="btnmais">+</div>
+						<div class="btnmenos">-</div>
+					</div>
+
+
+					<div class="singlevari">
+
+						<div class="input">
+							<input type="text">
+						</div>
+
+						<div class="btnmais">+</div>
+						<div class="btnmenos">-</div>
+					</div>
+
+
+					<div class="singlevari">
+
+						<div class="input">
+							<input type="text">
+						</div>
+
+						<div class="btnmais">+</div>
+						<div class="btnmenos">-</div>
+					</div>
+
+				</div>
+
+				<div class="botaoatualiza">
+					Relizar nova previsao
+				</div>
+
+			</div> <!--opcoes-->
+
+
+			<iframe title="bitcoin" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=562186ff-d040-4a15-84c9-49a0d8378024&autoAuth=true&ctid=e639878c-010f-442a-9926-86151f075ba0" frameborder="0" allowFullScreen="true"></iframe>
+
+
+		</div><!--painelmodelo-->
+
+
+		
+		<div style="display: none;" class="dataset">
+
+			<div class="opcoes">
+
+				<div></div>
+
+			</div>
+
+
+		</div><!--dataset-->
+
+
+	</div>
+
+
+	
+
+
+	</div><!--container-->
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+var usuario = ""
+
+function login(){	
+
+	var bgllogin = document.getElementById('pag1');
+      bgllogin.style.display = "initial"
+   var cadastro = document.getElementById('paglogin');
+      cadastro.style.display = "none"
+
+
+	  usuario = document.getElementById('nomeuser').value
+
+	  var meuParagrafo = document.getElementById('user');
+	  meuParagrafo.textContent = "Usuário: " + usuario;
+
+}
+
+function sair(){
+	var bgllogin = document.getElementById('paglogin');
+      bgllogin.style.display = "initial"
+   var cadastro = document.getElementById('pag1');
+      cadastro.style.display = "none"
+}
+
+
+
+function abrirselect(id){
+
+	console.log(id)
+	var select = document.getElementById(`${id}`);
+
+    select.style.display = "initial"
+
+}
+function teste(id) {
+    console.log(id);
+    
+    var select = document.getElementById(id);
+
+	id = id + "v"
+
+	console.log(id);
+
+    var subcat = document.getElementById(id);
+
+    // Verifica se o elemento foi encontrado
+    if (select) {
+        // Obtém o valor do estilo display
+        var displayValue = window.getComputedStyle(subcat).getPropertyValue('display');
+
+        console.log('Valor do display:', displayValue);
+		
+
+		if(displayValue == "block" || displayValue == "inline"){
+			
+			console.log('block:', displayValue);
+			subcat.style.display = "none"
+
+		}else if(displayValue == "none"){
+
+			subcat.style.display = "initial"
+
+			console.log('outrovalor:', displayValue);
+		}
+
+
+    } else {
+        console.error('Elemento não encontrado.');
+    }
+}
+
+
+
+function dashselect(id){
+	var iframe = document.getElementById('dmeudash');
+var novaURL = `${id}`;
+iframe.src = novaURL;
+}
+
+</script>
+</body>
+</html>
